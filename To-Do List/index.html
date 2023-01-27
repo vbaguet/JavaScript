@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module" defer></script>
+</head>
+<body>
+
+    <section class="container pt-5" id="todolist">
+        <form class="d-flex pb-4">
+            <input class="form-control" type="text" placeholder="Key a task..." name="title" required>
+            <button class="btn btn-primary ms-2">Add</button>
+        </form>
+        <main>
+            <div class="filters btn-group mb-4" role="group">
+                <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                <button type="button" class="btn btn-outline-primary" data-filter="todo">To Do</button>
+                <button type="button" class="btn btn-outline-primary" data-filter="done">Done</button>
+            </div>
+            <ul class="list-group"></ul>
+        </main>
+    </section>
+
+</body>
+</html>

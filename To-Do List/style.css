@@ -1,0 +1,3 @@
+.hide-done .is-done, .hide-todo .todo:not(.is-done) {
+    display: none !important
+}
